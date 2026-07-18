@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sansala Sewmini | Portfolio</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#f0f7ff',
+                            100: '#e0effe',
+                            600: '#2563eb',
+                            700: '#1d4ed8',
+                            900: '#1e3a8a',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans antialiased scroll-smooth">
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-100">
+        <div class="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-xl font-bold tracking-tight text-brand-900">Sansala</a>
+            <div class="hidden md:flex space-x-8 font-medium text-sm text-gray-600">
+                <a href="#about" class="hover:text-brand-600 transition">About</a>
+                <a href="#education" class="hover:text-brand-600 transition">Education</a>
+                <a href="#skills" class="hover:text-brand-600 transition">Skills</a>
+                <a href="#projects" class="hover:text-brand-600 transition">Projects</a>
+                <a href="#achievements" class="hover:text-brand-600 transition">Achievements</a>
+                <a href="#contact" class="hover:text-brand-600 transition">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="max-w-5xl mx-auto px-6 pt-20 pb-16 md:pt-28 md:pb-24 grid md:grid-cols-3 gap-12 items-center">
+        <div class="md:col-span-2 flex flex-col justify-center order-2 md:order-1">
+            <h2 class="text-brand-600 font-semibold tracking-wide text-sm mb-3">Hi!, I'm</h2>
+            <h1 class="text-4xl md:text-6xl font-extrabold text-gray-900 tracking-tight mb-4">Sansala Sewmini</h1>
+            <h2 class="text-2xl md:text-3xl font-bold text-gray-500 mb-6">Data Science Undergraduate</h2>
+            <p class="text-lg text-gray-600 max-w-xl mb-8 leading-relaxed">
+                I am a passionate Data Science student focused on data analysis, machine learning, and software development. I enjoy turning complex data into functional, real-world solutions.
+            </p>
+            <div class="flex flex-wrap gap-4">
+                <a href="#projects" class="bg-brand-600 hover:bg-brand-700 text-white font-medium px-6 py-3 rounded-lg transition shadow-md">
+                    View My Work
+                </a>
+                <!-- BONUS FEATURE: Download CV Button -->
+                <a href="c:\Users\USER\Downloads\sansalasewmini_resume.pdf" download="Sansala_Sewmini_CV.pdf" class="border border-brand-600 text-brand-600 hover:bg-brand-50 font-medium px-6 py-3 rounded-lg transition flex items-center gap-2">
+                    <i class="fa-solid fa-download"></i> Download CV
+                </a>
+            </div>
+        </div>
+        <!-- User Photo -->
+        <div class="flex justify-center order-1 md:order-2">
+            <img src="c:\Users\USER\OneDrive\Desktop\New folder\src=imagesmyphoto.jpg.jpeg.jpeg" alt="Sansala Sewmini" class="w-64 h-64 rounded-full border-4 border-white shadow-xl object-cover">
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="bg-white border-y border-gray-100 py-20">
+        <div class="max-w-5xl mx-auto px-6">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6 flex items-center">
+                <span class="text-brand-600 mr-2"><i class="fa-solid fa-address-card"></i></span> About Me
+            </h2>
+            <p class="text-gray-600 leading-relaxed max-w-3xl">
+                As an undergraduate student specializing in Data Science, I balance academic excellence with practical execution. I love exploring numerical methods, statistics, and computing architecture. I actively work on structuring codebases that resolve analytical problems efficiently while developing my communication and leadership capabilities.
+            </p>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-20 bg-gray-50">
+        <div class="max-w-5xl mx-auto px-6">
+            <h2 class="text-2xl font-bold text-gray-900 mb-8 flex items-center">
+                <span class="text-brand-600 mr-2"><i class="fa-solid fa-graduation-cap"></i></span> Education
+            </h2>
+            <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-sm max-w-3xl">
+                <div class="flex justify-between items-start">
+                    <div>
+                        <h3 class="text-lg font-bold text-gray-900">BSc (Hons) in Data Science</h3>
+                        <p class="text-gray-600 font-medium">Sri Lanka Technological Campus (SLTC)</p>
+                    </div>
+                    <span class="bg-brand-50 text-brand-700 text-xs px-3 py-1 rounded-full font-semibold">Undergraduate</span>
+                </div>
+                <p class="text-sm text-gray-500 mt-4 leading-relaxed">
+                    Focusing heavily on Advanced Calculus, Linear Algebra, Mathematical Simulations, Machine Learning Algorithms, and Computer Networking Concepts.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-white border-b border-gray-100">
+        <div class="max-w-5xl mx-auto px-6">
+            <h2 class="text-2xl font-bold text-gray-900 mb-8 flex items-center">
+                <span class="text-brand-600 mr-2"><i class="fa-solid fa-gear"></i></span> Core Skills
+            </h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-gray-50 p-6 rounded-xl border border-gray-100">
+                    <h3 class="font-bold text-gray-800 mb-4">Technical Tools</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1.5 bg-white text-gray-700 text-sm rounded-md border shadow-sm">Data Analysis</span>
+                        <span class="px-3 py-1.5 bg-white text-gray-700 text-sm rounded-md border shadow-sm">Machine Learning</span>
+                        <span class="px-3 py-1.5 bg-white text-gray-700 text-sm rounded-md border shadow-sm">Python (Tkinter)</span>
+                        <span class="px-3 py-1.5 bg-white text-gray-700 text-sm rounded-md border shadow-sm">MATLAB Simulations</span>
+                        <span class="px-3 py-1.5 bg-white text-gray-700 text-sm rounded-md border shadow-sm">Computer Networks</span>
+                    </div>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-xl border border-gray-100">
+                    <h3 class="font-bold text-gray-800 mb-4">Professional Qualities</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1.5 bg-brand-50 text-brand-700 text-sm rounded-md border border-brand-100 font-medium">Leadership</span>
+                        <span class="px-3 py-1.5 bg-brand-50 text-brand-700 text-sm rounded-md border border-brand-100 font-medium">Time Management</span>
+                        <span class="px-3 py-1.5 bg-brand-50 text-brand-700 text-sm rounded-md border border-brand-100 font-medium">Effective Communication</span>
+                        <span class="px-3 py-1.5 bg-brand-50 text-brand-700 text-sm rounded-md border border-brand-100 font-medium">Problem-Solving</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-gray-50">
+        <div class="max-w-5xl mx-auto px-6">
+            <h2 class="text-2xl font-bold text-gray-900 mb-8 flex items-center">
+                <span class="text-brand-600 mr-2"><i class="fa-solid fa-diagram-project"></i></span> Projects
+            </h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Project 1 -->
+                <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">SLTC Student Record Management System</h3>
+                        <p class="text-gray-600 text-sm mb-4 leading-relaxed">
+                            Developed a desktop application using Python and the Tkinter library to handle, organize, and automate student data entry workflows seamlessly.
+                        </p>
+                    </div>
+                    <div class="flex gap-2 text-xs font-mono text-gray-400">
+                        <span>Python</span> • <span>Tkinter</span> • <span>GUI</span>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Mathematical Reservoir Simulation</h3>
+                        <p class="text-gray-600 text-sm mb-4 leading-relaxed">
+                            Formulated mathematical computation scripts inside MATLAB to model physical environments and evaluate dynamic numerical results accurately.
+                        </p>
+                    </div>
+                    <div class="flex gap-2 text-xs font-mono text-gray-400">
+                        <span>MATLAB</span> • <span>Numerical Analytics</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="py-20 bg-white border-b border-gray-100">
+        <div class="max-w-5xl mx-auto px-6">
+            <h2 class="text-2xl font-bold text-gray-900 mb-8 flex items-center">
+                <span class="text-brand-600 mr-2"><i class="fa-solid fa-trophy"></i></span> Achievements & Certifications
+            </h2>
+            <ul class="space-y-4 max-w-3xl">
+                <li class="flex gap-3 items-start bg-gray-50 p-4 rounded-lg border border-gray-100">
+                    <span class="text-yellow-500 mt-1"><i class="fa-solid fa-circle-check"></i></span>
+                    <div>
+                        <strong class="text-gray-900">Advanced Data Analytics Certification</strong>
+                        <p class="text-sm text-gray-500">Successfully completed external coursework aligning Python with industrial ML methodologies.</p>
+                    </div>
+                </li>
+                <li class="flex gap-3 items-start bg-gray-50 p-4 rounded-lg border border-gray-100">
+                    <span class="text-yellow-500 mt-1"><i class="fa-solid fa-circle-check"></i></span>
+                    <div>
+                        <strong class="text-gray-900">Academic Project Excellence Recognition</strong>
+                        <p class="text-sm text-gray-500">Awarded top marks for optimal UI structures and rigorous system documentation workflows.</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 max-w-5xl mx-auto px-6 text-center">
+        <h2 class="text-3xl font-extrabold text-gray-900 mb-4">Get In Touch</h2>
+        <p class="text-gray-600 max-w-md mx-auto mb-8">
+            Feel free to connect with me for professional collaborations or opportunities.
+        </p>
+        
+        <!-- Social & Professional Connections -->
+        <div class="flex justify-center gap-6 text-2xl mb-8">
+            <!-- GitHub Link -->
+            <a href="https://github.com/sansalapathirage-web" target="_blank" class="text-gray-700 hover:text-black transition" title="GitHub Profile">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            <!-- LinkedIn Link -->
+            <a href="https://www.linkedin.com/in/sansala-pathirage-6b3297414?utm_source=share_via&utm_content=profile&utm_medium=member_ios" target="_blank" class="text-gray-700 hover:text-brand-600 transition" title="LinkedIn Profile">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <!-- Email Link -->
+            <a href="sansalapathirage@gmail.com" class="text-gray-700 hover:text-red-500 transition" title="Email Me">
+                <i class="fa-solid fa-envelope"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- BONUS FEATURE: Mock AI Chatbot UI Components -->
+    <div class="fixed bottom-6 right-6 z-50">
+        <button onclick="toggleChat()" class="bg-brand-600 hover:bg-brand-700 text-white p-4 rounded-full shadow-2xl flex items-center justify-center transition focus:outline-none">
+            <i class="fa-solid fa-comments text-xl"></i>
+        </button>
+        <div id="chat-box" class="hidden fixed bottom-24 right-6 w-80 bg-white border border-gray-200 rounded-xl shadow-2xl overflow-hidden flex flex-col">
+            <div class="bg-brand-900 text-white p-4 flex justify-between items-center">
+                <span class="font-bold text-sm">Sansala's Assistant AI</span>
+                <button onclick="toggleChat()" class="text-gray-300 hover:text-white"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="p-4 h-48 overflow-y-auto bg-gray-50 text-xs space-y-2">
+                <p class="bg-gray-200 p-2 rounded-lg text-gray-700 max-w-[80%]">Hi! Ask me anything about Sansala's project portfolio.</p>
+            </div>
+            <div class="p-2 border-t flex">
+                <input type="text" placeholder="Type here..." class="w-full text-xs p-2 border rounded-l-md focus:outline-none focus:border-brand-600">
+                <button class="bg-brand-600 text-white px-3 text-xs rounded-r-md">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleChat() {
+            var chat = document.getElementById('chat-box');
+            chat.classList.toggle('hidden');
+        }
+    </script>
+
+    <!-- Footer -->
+    <footer class="bg-gray-950 text-gray-500 text-xs py-8 text-center border-t border-gray-900">
+        <p>© 2026 Sansala Sewmini. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
